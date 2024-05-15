@@ -1,0 +1,64 @@
+
+<!--
+Columnas de la Tabla: La tabla debe tener una columna para cada día de la semana (Lunes a Domingo).
+Filas de la Tabla: Cada fila representa una habitación diferente del hotel. Asuma que el hotel tiene 10 habitaciones.
+Contenido de las Celdas: Cada celda debe mostrar si la habitación está reservada o disponible. Si está reservada, la celda debe contener el nombre del huésped y la hora de check-in.
+Cabecera de la Tabla: Incluir una fila de cabecera que indique el número de la habitación y otra con los días de la semana.
+Incluir colspan y rowspan: Utilizar estos atributos para representar reservas que abarquen múltiples días o que compartan la misma habitación en días consecutivos.
+-->
+
+<!--
+    Colspan hace que las columnas verticales se combinen
+    Rowspan hace que las columnas horizontales se combinen
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habitaciones</title>
+</head>
+
+<body>
+  
+<table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th> Hab</th>
+            <th> Lunes</th>
+            <th> Martes</th>
+            <th> Miércoles</th>
+            <th> Jueves</th>
+            <th> Viernes</th>
+            <th> Sábado</th>
+            <th> Domingo</th>
+        </tr>
+    </thead>
+    <tbody> 
+        <tr>
+            <td colspan="1"> 1</td>
+            <td colspan="1"> OCUPADO</td>
+            <td colspan="1"> LIBRE</td>
+            <td colspan="2"> OCUPADO</td>
+            <td colspan="3"> LIBRE</td>
+        </tr>
+        <tr>
+            <td colspan="1"> 2</td>
+            <td colspan="1"> LIBRE</td>
+            <td colspan="2"> OCUPADO</td>
+            <td colspan="1"> LIBRE</td>
+            <td colspan="2"> OCUPADO</td>
+            <td colspan="1"> LIBRE</td>
+        </tr>
+        <tr>
+            <td colspan="1"> 3</td>
+            <td colspan="3"> OCUPADO</td>
+            <td colspan="3"> LIBRE</td>
+            <td colspan="1"> OCUPADO</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
